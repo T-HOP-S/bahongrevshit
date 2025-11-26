@@ -1,98 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Kotaro#1337</title>
-    <meta name="theme-color" content="#000001">
-    <link rel="stylesheet" href="public/users/css/cat.css">
-    <link rel="icon" href="https://cdn.imagevisit.com/2025/04/24/weed.png" type="image/x-icon">
-    <link rel="shortcut icon" href="https://cdn.imagevisit.com/2025/04/24/weed.png" type="image/x-icon"> 
-    <meta content="4/u" property="og:title" />
-    <meta content="" property="og:image" />
-    <meta content="#000001" data-react-helmet="true" name="theme-color" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hacked By APT28</title>
+  <meta name="description" content="Welcome to apt28 Join us for discussions on cybersecurity, tech, and hacking tips.">
+  <meta name="keywords" content="cybersecurity, hacking, technology, apt28, discord, tech discussions">
+  <meta name="author" content="apt28">
+  <link rel="icon" href="https://media.discordapp.net/attachments/1365926691423256647/1366956780915134536/IMG_8200.jpg" type="image/gif" />
+  <meta property="og:title" content="apt28" />
+  <meta property="og:description" content="Join apt28 for exclusive cybersecurity discussions and updates." />
+  <meta property="og:image" content="https://media.discordapp.net/attachments/1365926691423256647/1366056393815097425/APT28.png" />
+  <meta property="og:url" content="https://discord.gg/apt28" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    pre {
+      font-size: 1.1rem;
+      color: #0ff;
+      text-shadow: 0 0 8px #0ff;
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 1.4rem;
+      color: #ff0055;
+      text-shadow: 0 0 5px #ff0055;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      color: #00f0ff;
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-shadow: 0 0 5px #00f0ff;
+    }
+
+    #members, #greetz {
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid;
+      padding-right: 5px;
+      animation: blink 1s step-end infinite;
+    }
+
+    #members {
+      color: #00ffcc;
+      border-color: #00ffcc;
+    }
+
+    #greetz {
+      color: #8eb7f0;
+      border-color: #ff0077;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #bgvideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+  </style>
 </head>
-<script src="anti-tanga.js"></script>
-<script src="effects.js"></script>
-<script src="effects2.js"></script> 
 <body>
+  <video autoplay muted loop id="bgvideo">
+    <source src="https://cdn.discordapp.com/attachments/1206567736696774679/1443177488292511885/lv_0_20250429170211.mp4?ex=69281f46&is=6926cdc6&hm=3f6be095bf7a20675d30616347b89590f5807709c528f99d6d68b18e896bff4c&" type="video/mp4">
+  </video>
+  
+  <a href="https://discord.gg/apt28" target="_blank">  <pre>
+    █████  ██████  ████████ ██████   █████  
+   ██   ██ ██   ██    ██         ██ ██   ██ 
+   ███████ ██████     ██     █████   █████  
+   ██   ██ ██         ██    ██      ██   ██ 
+   ██   ██ ██         ██    ███████  █████  
 
-    <div id="overlay">
-        <button class="overlaybtn" onclick="removeOverlay()">click to enter</button>
-    </div>
+     Your System Was Hacked. 
+ </pre>
+</a>
 
-    <div id="user-page">
+  <h2>Member:</h2>
+  <div id="members"></div>
 
-<img class="background" 
-     src="stray-programming.gif" 
-     draggable="false"
-     style="object-fit: cover; width:100%; height:100%; position:absolute; top: 0; left:0; z-index:-1;">
+  <h2>Greetz:</h2>
+  <div class="center"><div id="greetz"></div></div>
 
-        <div class="main-container" id="mainDiv">
+  <script>
+ window.addEventListener("DOMContentLoaded", () => {
+    const audio = new Audio("https://audio.jukehost.co.uk/Dg55irPm02FweMSRaCYkDdYCJlXxULMg");
+    audio.loop = true;
+    audio.muted = true;
+    audio.play().then(() => {
+      setTimeout(() => {
+        audio.muted = false; 
+      }, 1000);
+    }).catch(err => {
+      console.warn("Autoplay failed:", err);
+    });
+  });
+    const memberText = "Kotaro, Mesha, Rainy, Uno, Womy, Xev, Micx, Syete, Renz, Hairylips, Trust, Kiyo";
+    const greetzText = "Philippines Hacking University, The Nexus Squad, Xsos group, Magdalo Cyber Army, DeathNotehacker, Anonph";
+   
+    const memberEl = document.getElementById("members");
+    const greetzEl = document.getElementById("greetz");
 
-            <div class="profile-container">
-                <img class="pp" src="https://i.ibb.co/v6g2f3d3/f4640c5832304250ec59cec708726af6.png" draggable="false">
-                <p class="username breathing" data-tooltip="uid: 1">Kotaro</p>
+    function typeLoop(text, el, delayBeforeRestart) {
+      let i = 0;
+      el.textContent = "";
 
-                <div class="badges-container">
-                    <div class="badges pic-badge" id="prem" data-tooltip="weeds 24/7" style="background-image: url('https://cdn.imagevisit.com/2025/04/24/weed.png');"></div>
-                    <div class="badges pic-badge" id="early" data-tooltip="mabait na tao" style="background-image: url('https://cdn3.emoji.gg/emojis/91869-christ.png');"></div>
-                    <div class="badges pic-badge" id="own" data-tooltip="</>" style="background-image: url('https://discordresources.com/img/boosts/discordboost3.svg');"></div>
-                </div>
+      function type() {
+        if (i < text.length) {
+          el.textContent += text.charAt(i);
+          i++;
+          setTimeout(type, 100);
+        } else {
+          setTimeout(() => typeLoop(text, el, delayBeforeRestart), delayBeforeRestart);
+        }
+      }
 
-                <div class="bio-container">
-                    <div class="bio typewriter"></div>
-                </div>
-                <div class="pre-container">
-                    <div class="pre">
-                        <div class="cropped">
-                            <img draggable="false" id="rpc">
-                        </div>
-                    </div>
-                </div>
-                <div class="links-container" id="linksDiv">
+      type();
+    }
 
-                    <!-- Discord -->
-                    <div class="logo btc" onclick="window.open('https://discord.gg/nbi', '_blank');">
-                        <img src="pogi/discord.svg" class="links" width="24" />
-                    </div>
-
-                    <!-- Instagram -->
-                    <div class="logo instagram" onclick="window.open('https://www.instagram.com/jmesxyz_/', '_blank');">
-                        <img src="pogi/instagram.svg" class="links" width="24" />
-                    </div>
-
-                    <!-- YouTube -->
-                    <div class="logo youtube" onclick="window.open('https://youtube.com/@Kotaroisnice', '_blank');">
-                        <img src="pogi/youtube.svg" class="links" width="24" />
-                    </div>
-
-                    <!-- github -->
-                    <div class="logo github" onclick="window.open('https://github.com/kotaro1337', '_blank');">
-                        <img src="pogi/github.svg" class="links" width="24" />
-                    </div>
-                    
-                </div>
-
-                <div class="linksline"></div>
-
-                <div class="views-container">
-                    <svg viewBox="0 0 24 24" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 14C3 9.02944 7.02944 5 12 5C16.9706 5 21 9.02944 21 14M17 14C17 16.7614 14.7614 19 12 19C9.23858 19 7 16.7614 7 14C7 11.2386 9.23858 9 12 9C14.7614 9 17 11.2386 17 14Z" stroke="#c18be0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span id="view-count">1337</span>
-                </div>
-            </div>
-
-            <div class="mutebutton">
-                <p id="mutetext" onclick="toggleMusic()">on</p>
-            </div>
-         
-
-        <audio id="backgroundsong" src="https://audio.jukehost.co.uk/07UlrYbmsFKmdCmiAXLVXwOawqjzHpK6" loop></audio>
-
+    typeLoop(memberText, memberEl, 3000);
+    typeLoop(greetzText, greetzEl, 5000);
+  </script>
 </body>
 </html>
-
-
